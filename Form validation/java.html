@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+
+
+    <style>
+        form{
+            position: absolute;
+            left: 50%; top:50%;
+            transform: translate(-50%,-50%);
+            height: 40vh;
+            width: 50%;
+            border: 2px outset;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem;
+            background-color: rgba(126, 245, 245, 0.452);
+        }
+        input{
+            width: 80%;
+        }
+        #bt{
+              width: 5rem;
+              height: 1.5rem;
+              background-color: red;
+              color: white;
+              font-size: .8rem;
+        }
+    </style>
+</head>
+<body>
+   
+
+
+    <form  name="myform" onsubmit=" return checkForm()" action="new.html">
+        <label>Name</label>
+        <input type="text" name="username">
+        <span id="userError"></span>
+        <label>Email</label>
+        <input type="email" name="email">
+        <span id="emailError"></span>
+        <label>password</label>
+        <input type="password" name="cnfirm">
+        <span id="passError"></span>
+        <label>confirm password</label>
+        <input type="password" name="repass">
+        <span id="repassError"></span>
+        <input type="submit" id="bt">
+        <input type="reset" id="bt">
+    </form>
+
+    <script src="java.js"></script>
+    
+</body>
+</html>
